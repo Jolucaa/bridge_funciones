@@ -3,8 +3,8 @@
 
 (function() {
     "use Strict";
-    function reader(numbersNeeded){
-        let neededInputs = numbersNeeded;
+    function reader(numberOfReadsNeeded){
+        let lengthNeeded = numberOfReadsNeeded;
         let inputtedNumber = [];
         do{
 
@@ -14,7 +14,7 @@
             }while (Number.isNaN(input))
 
             inputtedNumber.push(Number(input));
-        }while (neededInputs!==inputtedNumber.length)
+        }while (lengthNeeded!==inputtedNumber.length)
         return inputtedNumber;
     }
 
